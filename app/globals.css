@@ -1,0 +1,41 @@
+:root { --coffee:#6f321f; --coffee-dark:#4e2418; --cream:#fffaf0; --gold:#c87a13; --ink:#2b201b; --muted:#7e6c63; --line:#eadfd5; }
+* { box-sizing:border-box; }
+body { margin:0; background:#f5eee4; color:var(--ink); font-family:Arial, sans-serif; }
+button { font:inherit; cursor:pointer; }
+.shell { min-height:100vh; display:grid; grid-template-columns:230px 1fr; }
+.sidebar { background:var(--coffee-dark); color:white; padding:24px 18px; }
+.brand { font-size:24px; font-weight:800; letter-spacing:-.04em; margin-bottom:8px; }
+.brand span { color:#f4ba55; }
+.role { color:#e8cdbd; font-size:12px; margin-bottom:34px; }
+.nav { display:grid; gap:8px; }
+.nav button { text-align:left; border:0; background:transparent; color:#f7e5d8; padding:12px; border-radius:10px; }
+.nav button.active, .nav button:hover { background:#8d442b; color:white; }
+.main { padding:26px; max-width:1300px; width:100%; margin:auto; }
+.topbar { display:flex; justify-content:space-between; align-items:center; gap:16px; margin-bottom:22px; }
+h1 { margin:0; font-size:28px; } h2 { margin:0; font-size:18px; }
+.subtle { color:var(--muted); font-size:13px; }
+.staff { display:flex; align-items:center; gap:10px; background:white; border:1px solid var(--line); padding:8px 12px; border-radius:12px; font-size:13px; }
+.avatar { width:30px; height:30px; display:grid; place-items:center; border-radius:50%; background:#f3d8b3; color:var(--coffee-dark); font-weight:800; }
+.grid { display:grid; grid-template-columns:minmax(0,1fr) 350px; gap:22px; align-items:start; }
+.panel { background:var(--cream); border:1px solid var(--line); border-radius:16px; padding:18px; box-shadow:0 5px 18px #5b2a1710; }
+.table-grid { display:grid; grid-template-columns:repeat(4, minmax(72px,1fr)); gap:10px; margin:16px 0 22px; }
+.table-btn { border:1px solid #d9bba7; background:white; border-radius:12px; padding:15px 8px; color:var(--coffee); font-weight:800; }
+.table-btn.selected { background:var(--coffee); color:white; border-color:var(--coffee); }
+.categories { display:flex; gap:8px; overflow:auto; padding-bottom:4px; margin:14px 0; }
+.cat { white-space:nowrap; border:1px solid var(--line); background:white; color:var(--coffee); border-radius:999px; padding:8px 13px; font-size:13px; }
+.cat.selected { background:#f0d2a7; border-color:#d99b52; }
+.menu { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
+.item { border:1px solid var(--line); background:white; border-radius:12px; padding:13px; display:flex; justify-content:space-between; align-items:center; gap:12px; }
+.item-name { font-weight:700; font-size:14px; } .item-station { color:var(--muted); font-size:11px; margin-top:4px; }
+.price { color:var(--coffee); font-weight:800; white-space:nowrap; }
+.add { border:0; background:#f1dfc8; color:var(--coffee-dark); border-radius:8px; padding:7px 10px; font-weight:800; }
+.order-head { display:flex; justify-content:space-between; align-items:center; margin-bottom:13px; }
+.empty { color:var(--muted); font-size:13px; padding:25px 5px; text-align:center; }
+.cart-row { display:grid; grid-template-columns:1fr auto; gap:6px; border-bottom:1px solid var(--line); padding:12px 0; }
+.cart-name { font-weight:700; font-size:13px; } .cart-meta { color:var(--muted); font-size:11px; }
+.qty { display:flex; gap:7px; align-items:center; } .qty button { width:25px; height:25px; border:1px solid var(--line); background:white; border-radius:6px; }
+.total { display:flex; justify-content:space-between; font-size:18px; font-weight:800; padding:16px 0; }
+.submit { width:100%; border:0; border-radius:10px; padding:13px; background:var(--gold); color:white; font-weight:800; }
+.submit:disabled { opacity:.5; cursor:not-allowed; }
+.note { width:100%; border:1px solid var(--line); border-radius:9px; padding:10px; resize:vertical; }
+@media (max-width:800px) { .shell { display:block; } .sidebar { padding:15px; } .role { margin-bottom:12px; } .nav { display:flex; overflow:auto; } .main { padding:15px; } .grid { grid-template-columns:1fr; } .menu { grid-template-columns:1fr; } }
