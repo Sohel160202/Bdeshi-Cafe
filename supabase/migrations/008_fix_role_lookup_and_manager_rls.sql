@@ -15,6 +15,7 @@ as $$
 $$;
 
 revoke all on function public.current_staff_role() from public;
+revoke execute on function public.current_staff_role() from anon;
 grant execute on function public.current_staff_role() to authenticated;
 
 drop policy if exists "staff can read menu" on public.menu_items;
