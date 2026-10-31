@@ -2,6 +2,45 @@
 * { box-sizing:border-box; }
 body { margin:0; background:#ffffff; color:var(--ink); font-family:Arial, sans-serif; }
 button { font:inherit; cursor:pointer; }
+.eyebrow { color:var(--terracotta); font-size:11px; font-weight:800; letter-spacing:.14em; margin-bottom:6px; }
+.section-head { display:flex; justify-content:space-between; align-items:flex-start; gap:12px; }
+.pill,.cart-count { border-radius:999px; background:#fff3df; color:var(--coffee); padding:7px 10px; font-size:12px; font-weight:800; }
+.cart-count { min-width:28px; text-align:center; }
+.item-actions { display:flex; align-items:center; gap:10px; }
+.link-button { margin-left:auto; border:0; background:transparent; color:#8f5a45; font-size:11px; }
+.success { background:#eef8ef; color:#28733d; border:1px solid #cbe8d0; border-radius:10px; padding:11px 14px; margin-bottom:16px; font-size:13px; }
+.error { background:#fff0ed; color:#a33b2a; border:1px solid #f0c5bb; border-radius:10px; padding:11px 14px; margin:12px 0; font-size:13px; }
+.loading-screen { min-height:100vh; display:grid; place-items:center; color:var(--coffee); font-weight:700; background:#fff; }
+.login-page { min-height:100vh; display:grid; place-items:center; background:#fff; padding:20px; }
+.login-card { width:min(100%,420px); padding:38px; border:1px solid var(--line); border-radius:22px; box-shadow:0 14px 50px #74351f12; text-align:center; }
+.login-mark { width:56px; height:56px; display:grid; place-items:center; margin:0 auto 18px; border-radius:16px; background:var(--coffee); color:#fffaf0; font-size:32px; font-weight:900; }
+.login-card h1 { margin:6px 0 8px; }
+.login-form { display:grid; gap:14px; text-align:left; margin-top:25px; }
+.login-form label { display:grid; gap:7px; color:var(--coffee-dark); font-size:13px; font-weight:700; }
+.login-form input { border:1px solid var(--line); border-radius:10px; padding:12px; outline:none; }
+.login-form input:focus,.note:focus { border-color:#c87916; box-shadow:0 0 0 3px #c8791620; }
+.counter-page { min-height:100vh; background:#fff; padding:30px 34px; }
+.counter-header { max-width:1300px; margin:0 auto 24px; display:flex; justify-content:space-between; align-items:flex-start; gap:20px; }
+.counter-toolbar { max-width:1300px; margin:0 auto 20px; display:flex; justify-content:space-between; gap:12px; align-items:center; }
+.station-tabs { display:flex; gap:8px; flex-wrap:wrap; }
+.station-tabs button,.refresh { border:1px solid var(--line); background:#fff; color:var(--coffee); border-radius:10px; padding:10px 14px; font-weight:700; font-size:13px; }
+.station-tabs button.selected,.refresh { background:var(--coffee); border-color:var(--coffee); color:#fff; }
+.refresh { background:#fffaf0; color:var(--coffee); border-color:#e3cbbb; }
+.order-board { max-width:1300px; margin:auto; display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:14px; }
+.order-card { border:1px solid var(--line); border-top:4px solid var(--terracotta); border-radius:14px; padding:16px; background:#fffaf0; }
+.order-card-head { display:flex; justify-content:space-between; align-items:center; padding-bottom:12px; border-bottom:1px solid var(--line); }
+.order-number { font-size:18px; font-weight:900; color:var(--coffee); }
+.table-label { margin-left:10px; color:var(--terracotta); font-weight:800; font-size:13px; }
+.order-time { color:var(--muted); font-size:12px; }
+.ticket-line { display:grid; grid-template-columns:32px 1fr 10px; align-items:center; gap:5px; padding:12px 0; border-bottom:1px dashed #dfcfc5; font-size:14px; }
+.station-dot { width:8px; height:8px; border-radius:50%; background:var(--terracotta); }
+.station-dot[data-station="drinks"] { background:var(--gold); }
+.order-note { background:#fff3df; border-radius:8px; margin-top:12px; padding:9px; font-size:12px; }
+.order-card-actions { display:flex; flex-wrap:wrap; gap:7px; margin-top:14px; }
+.order-card-actions button { flex:1; border:1px solid #e3cbbb; background:#fff; color:var(--coffee); border-radius:8px; padding:9px 7px; font-size:11px; font-weight:800; }
+.order-card-actions .primary-small { background:var(--coffee); color:#fff; border-color:var(--coffee); }
+.large-empty { min-height:260px; display:flex; flex-direction:column; justify-content:center; align-items:center; gap:8px; color:var(--muted); }
+.empty-icon { width:46px; height:46px; display:grid; place-items:center; border-radius:50%; background:#edf8ef; color:#278044; font-size:22px; font-weight:900; }
 .shell { min-height:100vh; display:grid; grid-template-columns:230px 1fr; background:#fff; }
 .sidebar { background:var(--coffee-dark); color:white; padding:26px 18px; }
 .brand { font-size:24px; font-weight:800; letter-spacing:-.04em; margin-bottom:8px; }
@@ -40,4 +79,5 @@ h1 { margin:0; font-size:28px; } h2 { margin:0; font-size:18px; }
 .submit { width:100%; border:0; border-radius:10px; padding:14px; background:var(--coffee); color:white; font-weight:800; }
 .submit:disabled { opacity:.5; cursor:not-allowed; }
 .note { width:100%; border:1px solid var(--line); border-radius:9px; padding:10px; resize:vertical; }
-@media (max-width:800px) { .shell { display:block; } .sidebar { padding:15px; position:sticky; top:0; z-index:2; } .role { margin-bottom:12px; } .nav { display:flex; overflow:auto; } .main { padding:16px; } .topbar { align-items:flex-start; flex-direction:column; } .grid { grid-template-columns:1fr; } .menu { grid-template-columns:1fr; } .table-grid { grid-template-columns:repeat(4,1fr); } }
+@media (max-width:900px) { .order-board { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+@media (max-width:800px) { .shell { display:block; } .sidebar { padding:15px; position:sticky; top:0; z-index:2; } .role { margin-bottom:12px; } .nav { display:flex; overflow:auto; } .main,.counter-page { padding:16px; } .topbar,.counter-header { align-items:flex-start; flex-direction:column; } .grid { grid-template-columns:1fr; } .menu { grid-template-columns:1fr; } .table-grid { grid-template-columns:repeat(4,1fr); } .counter-toolbar { align-items:flex-start; flex-direction:column; } .order-board { grid-template-columns:1fr; } }
