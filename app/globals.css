@@ -204,7 +204,8 @@ h1 { margin:0; font-size:28px; } h2 { margin:0; font-size:18px; }
 .about-pills { display:flex; justify-content:center; flex-wrap:wrap; gap:10px; margin-top:26px; }
 .about-pills span { border:1px solid #a9684e; border-radius:999px; padding:9px 13px; color:#f7e5d8; font-size:12px; }
 .public-footer { max-width:1180px; margin:auto; padding:38px 28px; display:grid; grid-template-columns:2fr 1fr 1fr; gap:25px; color:var(--coffee); }
-.public-footer>div { display:flex; gap:10px; align-items:flex-start; }
+.public-footer>div { display:block; }
+.public-footer>div:first-child { display:flex; gap:10px; align-items:flex-start; }
 .public-footer img { width:50px; height:50px; border-radius:50%; object-fit:contain; }
 .public-footer b { font-family:Georgia,serif; }
 .public-footer p { margin:5px 0 0; color:var(--muted); font-size:12px; line-height:1.6; }
