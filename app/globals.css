@@ -20,6 +20,10 @@ button { font:inherit; cursor:pointer; }
 .login-form input { border:1px solid var(--line); border-radius:10px; padding:12px; outline:none; }
 .login-form input:focus,.note:focus { border-color:#c87916; box-shadow:0 0 0 3px #c8791620; }
 .counter-page { min-height:100vh; background:#fff; padding:30px 34px; }
+.manager-switch { display:flex; gap:8px; padding:16px 34px 0; background:#fff; }
+.manager-switch button,.switch-button { border:1px solid var(--line); background:#fffaf0; color:var(--coffee); border-radius:9px; padding:9px 13px; font-size:12px; font-weight:800; }
+.manager-switch button.active,.switch-button { background:var(--coffee); color:#fff; border-color:var(--coffee); }
+.header-actions { display:flex; align-items:center; gap:10px; }
 .counter-header { max-width:1300px; margin:0 auto 24px; display:flex; justify-content:space-between; align-items:flex-start; gap:20px; }
 .counter-toolbar { max-width:1300px; margin:0 auto 20px; display:flex; justify-content:space-between; gap:12px; align-items:center; }
 .station-tabs { display:flex; gap:8px; flex-wrap:wrap; }
