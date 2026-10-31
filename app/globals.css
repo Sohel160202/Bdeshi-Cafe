@@ -209,6 +209,8 @@ h1 { margin:0; font-size:28px; } h2 { margin:0; font-size:18px; }
 .public-footer b { font-family:Georgia,serif; }
 .public-footer p { margin:5px 0 0; color:var(--muted); font-size:12px; line-height:1.6; }
 .public-footer a { color:var(--coffee); font-weight:800; text-decoration:none; }
+.public-footer .footer-links { display:flex; flex-wrap:wrap; gap:10px; margin-top:10px; }
+.public-footer .footer-links a { border:1px solid #e3cbbb; border-radius:999px; padding:7px 10px; font-size:11px; background:#fffaf0; }
 @media (max-width:900px) { .order-board,.server-order-list,.history-list { grid-template-columns:repeat(2,minmax(0,1fr)); } .table-orders-grid { grid-template-columns:repeat(2,minmax(0,1fr)); } .history-filters { grid-template-columns:repeat(3,minmax(0,1fr)); } }
 @media (max-width:1100px) {
   .sidebar { padding:20px 14px; }
