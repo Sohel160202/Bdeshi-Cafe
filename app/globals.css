@@ -73,6 +73,8 @@ button { font:inherit; cursor:pointer; }
 .history-card-head b { color:var(--coffee); }
 .history-card-head span:not(.status) { color:var(--terracotta); font-size:12px; font-weight:800; }
 .history-card-head time { color:var(--muted); font-size:11px; white-space:nowrap; }
+.delete-order-button { width:100%; margin-top:14px; border:1px solid #efc2b8; border-radius:8px; padding:9px; background:#fff; color:#a43e2d; font-size:11px; font-weight:800; }
+.delete-order-button:hover { background:#fff0ed; }
 .edit-order { margin-top:12px; padding:10px; border:1px solid #e3cbbb; border-radius:10px; background:#fffaf0; }
 .edit-order-title { color:var(--coffee); font-size:12px; font-weight:800; margin-bottom:5px; }
 .edit-order-line { display:grid; grid-template-columns:1fr 25px 24px 25px auto; align-items:center; gap:5px; padding:8px 0; border-bottom:1px dashed #dfcfc5; font-size:12px; }
