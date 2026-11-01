@@ -81,6 +81,9 @@ function printCustomerReceipt(table:number, tableOrders:Order[], setError:(messa
   logo.style.height="auto";
   logo.style.filter="grayscale(1) contrast(1.5)";
   popup.document.body.insertBefore(logo,popup.document.body.firstChild);
+  const doodles=popup.document.querySelector(".doodles");
+  if(doodles)doodles.textContent="☕ ✦ ♡ ✦ ☕";
+  popup.document.body.style.fontWeight="700";
   popup.document.body.style.fontFamily="'Courier New', monospace";
   popup.document.querySelectorAll(".brand,.meta,.item-head,.item,.summary").forEach((element)=>{(element as HTMLElement).style.fontFamily="'Courier New', monospace"});
   const thanks=popup.document.querySelector(".thanks") as HTMLElement|null;
