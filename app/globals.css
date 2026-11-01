@@ -156,6 +156,8 @@ h1 { margin:0; font-size:28px; } h2 { margin:0; font-size:18px; }
 .table-btn:hover { border-color:var(--gold); transform:translateY(-1px); }
 .table-btn.selected { background:var(--coffee); color:white; border-color:var(--coffee); }
 .categories { display:flex; flex-wrap:wrap; gap:8px; overflow:visible; padding:2px 0; margin:12px 0 14px; }
+.menu-search { width:100%; border:1px solid var(--line); border-radius:10px; padding:12px 14px; background:#fff; color:var(--ink); outline:none; margin:12px 0 2px; }
+.menu-search:focus { border-color:var(--gold); box-shadow:0 0 0 3px #c8791620; }
 .cat { flex:0 0 auto; white-space:nowrap; border:1px solid #e3cbbb; background:#fff; color:var(--coffee); border-radius:8px; padding:8px 12px; font-size:12px; font-weight:600; transition:.15s ease; }
 .cat.selected { background:#f0d2a7; border-color:#d99b52; }
 .menu { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; }
