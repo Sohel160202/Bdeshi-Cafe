@@ -102,6 +102,8 @@ button { font:inherit; cursor:pointer; }
 .menu-save:disabled { opacity:.55; cursor:not-allowed; }
 .server-order-list { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px; margin-top:18px; }
 .server-order-card { border:1px solid var(--line); border-radius:14px; padding:16px; background:#fffaf0; }
+.server-edit-button { width:100%; margin:-7px 0 8px; border:1px solid #e3cbbb; border-radius:8px; padding:8px; background:#fff; color:var(--coffee); font-size:11px; font-weight:800; }
+.server-edit-button:hover { background:#fff3df; }
 .server-order-head { display:flex; justify-content:space-between; align-items:center; gap:12px; }
 .server-order-head b { color:var(--coffee); font-size:16px; }
 .server-order-head span:not(.status) { margin-left:10px; color:var(--terracotta); font-weight:800; font-size:13px; }
