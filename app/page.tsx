@@ -70,24 +70,8 @@ function printCustomerReceipt(table:number, tableOrders:Order[], setError:(messa
   const date=(value:Date)=>value.toLocaleString("en-BD",{day:"numeric",month:"numeric",year:"numeric",hour:"numeric",minute:"2-digit"});
   popup.document.write(`<html><head><title>Customer copy · Table ${table}</title><style>@page{size:80mm auto;margin:4mm}body{font-family:Arial,sans-serif;width:72mm;margin:0;font-size:12px;color:#000}.center{text-align:center}.doodles{font-family:"Courier New",monospace;font-size:11px;line-height:1.25;letter-spacing:.4px;margin:1px 0 7px;white-space:pre}.brand{font-size:17px;font-weight:bold;letter-spacing:.4px}.tagline{font-size:10px;margin-top:2px}.muted{font-size:10px}.line{border-top:1px dashed #000;margin:9px 0}.meta{font-size:10px;line-height:1.55}.meta-row{display:flex;justify-content:space-between;gap:5px}.meta-row b{white-space:nowrap}.item-head,.item{display:grid;grid-template-columns:minmax(0,1fr) 24px 47px;gap:4px;align-items:start}.item-head{font-weight:bold;border-bottom:1px solid #000;padding-bottom:4px;margin-bottom:5px}.item{margin:6px 0;line-height:1.25}.item .qty{text-align:center}.item .amount{text-align:right}.summary{margin-top:9px;border-top:1px dashed #000;padding-top:7px}.summary-row{display:flex;justify-content:space-between;line-height:1.55}.grand{font-size:16px;font-weight:bold;border-top:1px solid #000;margin-top:4px;padding-top:5px}.thanks{text-align:center;border-top:1px dashed #000;margin-top:12px;padding-top:10px;font-style:italic;line-height:1.5}.small{text-align:center;font-size:10px;margin-top:8px}</style></head><body><div class="center doodles">☕  .-''''-.   /\\__/\\   [====]   /\\___/\\  ☕<br/>COFFEE   CROISSANT   BURGER   SANDWICH</div><div class="center brand">B-DESHI CAFÉ</div><div class="center tagline">Good food · Great adda</div><div class="center muted">26/A Majid Sarani, Sonadanga, Khulna</div><div class="center muted">01754204098 · 01685968902 · 01763814763</div><div class="line"></div><div class="meta"><div class="meta-row"><b>Customer copy</b><span>Table ${table}</span></div><div class="meta-row"><span>Order ID</span><span>${orderNumbers}</span></div><div class="meta-row"><span>Order date</span><span>${date(orderDate)}</span></div><div class="meta-row"><span>Print date</span><span>${date(printDate)}</span></div></div><div class="line"></div><div class="item-head"><span>Item / Description</span><span class="qty">Qty</span><span class="amount">Amount</span></div>${lines.map(item=>`<div class="item"><span>${item.item_name}</span><span class="qty">${item.quantity}</span><span class="amount">${money(item.quantity*item.unit_price)}</span></div>`).join("")}<div class="summary"><div class="summary-row"><span>Subtotal</span><span>${money(total)}</span></div><div class="summary-row grand"><span>Grand total</span><span>${money(total)}</span></div></div><div class="thanks">Thank you for visiting!<br/>Come back for another cup ☕</div><div class="center small">♡ Made with care in Khulna ♡</div><script>window.onload=()=>{window.print();window.onafterprint=()=>window.close()}</script></body></html>`);
   popup.document.close();
-  const logo=popup.document.createElement("img");
-  logo.src="/logo.png";
-  logo.alt="B-deshi Café logo";
-  logo.style.display="block";
-  logo.style.margin="0 auto 5px";
-  logo.style.width="30mm";
-  logo.style.maxHeight="28mm";
-  logo.style.objectFit="contain";
-  logo.style.height="auto";
-  logo.style.filter="grayscale(1) contrast(1.5)";
-  popup.document.body.insertBefore(logo,popup.document.body.firstChild);
   const doodles=popup.document.querySelector(".doodles");
   if(doodles)doodles.textContent="☕ ✦ ♡ ✦ ☕";
-  popup.document.body.style.fontWeight="700";
-  popup.document.body.style.fontFamily="'Courier New', monospace";
-  popup.document.querySelectorAll(".brand,.meta,.item-head,.item,.summary").forEach((element)=>{(element as HTMLElement).style.fontFamily="'Courier New', monospace"});
-  const thanks=popup.document.querySelector(".thanks") as HTMLElement|null;
-  if(thanks)thanks.style.fontFamily="cursive";
 }
 
 function CounterView({staff,onLogout,manager=false}:{staff:Staff,onLogout:()=>void;manager?:boolean}){
