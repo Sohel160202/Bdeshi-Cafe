@@ -76,6 +76,8 @@ function printCustomerReceipt(table:number, tableOrders:Order[], setError:(messa
   logo.style.display="block";
   logo.style.margin="0 auto 5px";
   logo.style.width="30mm";
+  logo.style.maxHeight="28mm";
+  logo.style.objectFit="contain";
   logo.style.height="auto";
   logo.style.filter="grayscale(1) contrast(1.5)";
   popup.document.body.insertBefore(logo,popup.document.body.firstChild);
