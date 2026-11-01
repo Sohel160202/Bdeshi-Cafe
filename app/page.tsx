@@ -81,6 +81,10 @@ function printCustomerReceipt(table:number, tableOrders:Order[], setError:(messa
   logo.style.height="auto";
   logo.style.filter="grayscale(1) contrast(1.5)";
   popup.document.body.insertBefore(logo,popup.document.body.firstChild);
+  popup.document.body.style.fontFamily="'Courier New', monospace";
+  popup.document.querySelectorAll(".brand,.meta,.item-head,.item,.summary").forEach((element)=>{(element as HTMLElement).style.fontFamily="'Courier New', monospace"});
+  const thanks=popup.document.querySelector(".thanks") as HTMLElement|null;
+  if(thanks)thanks.style.fontFamily="cursive";
 }
 
 function CounterView({staff,onLogout,manager=false}:{staff:Staff,onLogout:()=>void;manager?:boolean}){
