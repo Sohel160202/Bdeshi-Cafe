@@ -152,6 +152,9 @@ h1 { margin:0; font-size:28px; } h2 { margin:0; font-size:18px; }
 .grid { display:grid; grid-template-columns:minmax(0,1fr) 350px; gap:22px; align-items:start; }
 .panel { background:var(--surface); border:1px solid var(--line); border-radius:18px; padding:20px; box-shadow:0 8px 26px #5b2a170b; }
 .table-grid { display:grid; grid-template-columns:repeat(6, minmax(58px,1fr)); gap:8px; margin:14px 0 20px; }
+.parcel-heading { margin:4px 0 8px; color:var(--coffee); font-size:13px; font-weight:800; }
+.parcel-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:8px; margin:0 0 20px; }
+.parcel-btn { background:#fff3df; border-color:#d99b52; }
 .table-btn { border:1px solid #e3cbbb; background:#fffaf0; border-radius:10px; padding:10px 7px; color:var(--coffee); font-weight:800; transition:.15s ease; }
 .table-btn:hover { border-color:var(--gold); transform:translateY(-1px); }
 .table-btn.selected { background:var(--coffee); color:white; border-color:var(--coffee); }
