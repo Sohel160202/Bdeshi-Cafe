@@ -104,6 +104,11 @@ button { font:inherit; cursor:pointer; }
 .server-order-card { border:1px solid var(--line); border-radius:14px; padding:16px; background:#fffaf0; }
 .server-edit-button { width:100%; margin:-7px 0 8px; border:1px solid #e3cbbb; border-radius:8px; padding:8px; background:#fff; color:var(--coffee); font-size:11px; font-weight:800; }
 .server-edit-button:hover { background:#fff3df; }
+.transfer-controls { display:flex; gap:6px; align-items:center; margin:8px 0; }
+.transfer-controls select { flex:1; min-width:0; border:1px solid var(--line); border-radius:8px; padding:8px; background:#fff; color:var(--coffee); font-size:11px; }
+.transfer-controls button { border:1px solid var(--coffee); border-radius:8px; padding:8px 10px; background:#fff; color:var(--coffee); font-size:11px; font-weight:800; }
+.transfer-controls button:disabled { opacity:.5; cursor:not-allowed; }
+.order-card-actions .transfer-controls { flex:1 1 100%; margin:0 0 2px; }
 .server-order-head { display:flex; justify-content:space-between; align-items:center; gap:12px; }
 .server-order-head b { color:var(--coffee); font-size:16px; }
 .server-order-head span:not(.status) { margin-left:10px; color:var(--terracotta); font-weight:800; font-size:13px; }
