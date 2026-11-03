@@ -92,7 +92,9 @@ button { font:inherit; cursor:pointer; }
 .add-item-results button:hover { background:#fff7ed; }
 .add-item-empty { padding:10px; color:var(--muted); font-size:12px; }
 .done-edit { width:100%; margin-top:10px; border:1px solid var(--coffee); border-radius:8px; padding:8px; background:var(--coffee); color:#fff; font-weight:800; font-size:11px; }
-.menu-manager-search { width:100%; margin:16px 0; border:1px solid var(--line); border-radius:10px; padding:13px 14px; background:#fff; color:var(--ink); outline:none; font-size:14px; }\n.menu-manager-search:focus { border-color:#c87916; box-shadow:0 0 0 3px #c8791620; }\n.menu-manager { max-width:1300px; margin:auto; display:grid; gap:18px; }
+.menu-manager-search { width:100%; margin:16px 0; border:1px solid var(--line); border-radius:10px; padding:13px 14px; background:#fff; color:var(--ink); outline:none; font-size:14px; }
+.menu-manager-search:focus { border-color:#c87916; box-shadow:0 0 0 3px #c8791620; }
+.menu-manager { max-width:1300px; margin:auto; display:grid; gap:18px; }
 .menu-manager-add { display:grid; grid-template-columns:minmax(180px,1.4fr) 110px minmax(150px,1fr) 150px 120px; gap:10px; align-items:end; margin-top:18px; }
 .menu-manager-add label { display:grid; gap:7px; color:var(--coffee-dark); font-size:12px; font-weight:700; }
 .menu-manager-add input,.menu-manager-add select,.menu-editor-row input,.menu-editor-row select { width:100%; border:1px solid var(--line); border-radius:9px; padding:10px; background:#fff; color:var(--ink); outline:none; }
