@@ -275,4 +275,4 @@ h1 { margin:0; font-size:28px; } h2 { margin:0; font-size:18px; }
   .menu { grid-template-columns:repeat(2,minmax(0,1fr)); }
   .item-name { font-size:15px; }
   .table-grid { grid-template-columns:repeat(6,minmax(50px,1fr)); }
-}
+} @media (max-width:600px) { .refund-lookup form { flex-direction:column; align-items:stretch; } .refund-lookup .submit { width:100%; } }
