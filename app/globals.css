@@ -229,7 +229,15 @@ h1 { margin:0; font-size:28px; } h2 { margin:0; font-size:18px; }
 .public-item h4 { margin:0 0 4px; color:var(--ink); font-size:15px; font-weight:500; }
 .public-item span { color:var(--muted); font-size:11px; }
 .public-item b { color:var(--coffee); white-space:nowrap; font-size:14px; }
-.public-about { background:var(--coffee-dark); color:#fffaf0; padding:82px 28px; text-align:center; }
+
+.public-review { max-width:1180px; margin:0 auto; padding:82px 28px; display:grid; grid-template-columns:minmax(0,1.15fr) minmax(240px,.85fr); gap:48px; align-items:center; background:var(--cream); }
+.review-copy h2 { font-family:Georgia,serif; color:var(--coffee); font-size:clamp(36px,5vw,58px); line-height:1.04; margin:0; }
+.review-copy p { max-width:520px; margin:18px 0 0; color:var(--muted); line-height:1.75; }
+.review-actions { display:flex; align-items:center; flex-wrap:wrap; gap:14px; margin-top:26px; }
+.review-hint { color:var(--muted); font-size:12px; }
+.review-qr-card { justify-self:center; padding:16px; background:#fff; border:1px solid #e3cbbb; border-radius:24px; box-shadow:0 14px 30px rgba(76,38,24,.10); }
+.review-qr-card img { display:block; width:230px; height:230px; border-radius:12px; }
+\n.public-about { background:var(--coffee-dark); color:#fffaf0; padding:82px 28px; text-align:center; }
 .public-about .eyebrow { color:#f1b25c; }
 .public-about h2 { color:#fffaf0; }
 .public-about p { max-width:600px; margin:18px auto 0; color:#e8cdbd; line-height:1.7; }
