@@ -302,3 +302,7 @@ h1 { margin:0; font-size:28px; } h2 { margin:0; font-size:18px; }
 .customer-matches span { font-weight:700; }
 .customer-matches small { color:var(--muted); }
 @media (max-width:600px) { .customer-fields { grid-template-columns:1fr; } }
+
+.history-card-actions { display:flex; flex-wrap:wrap; gap:10px; align-items:center; margin-top:14px; }
+.history-card-actions .print-receipt-button, .history-card-actions .delete-order-button { margin-top:0; }
+@media (max-width:600px) { .history-card-actions > button { flex:1 1 100%; } }
