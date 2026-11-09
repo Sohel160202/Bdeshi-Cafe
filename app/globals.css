@@ -340,3 +340,6 @@ h1 { margin:0; font-size:28px; } h2 { margin:0; font-size:18px; }
 .customer-history-order-head strong { color:var(--terracotta); }
 .customer-history-items { display:flex; flex-wrap:wrap; gap:6px 14px; margin-top:8px; color:var(--ink); font-size:12px; }
 @media (max-width:600px) { .customer-history-order-head { grid-template-columns:1fr auto; } .customer-history-order-head span { grid-column:1 / -1; grid-row:2; } }
+
+.customer-history-header-actions { display:flex; align-items:center; gap:16px; }
+@media (max-width:700px) { .customer-history-header-actions { width:100%; justify-content:space-between; gap:8px; } .customer-history-header-actions .refresh { order:-1; } }
