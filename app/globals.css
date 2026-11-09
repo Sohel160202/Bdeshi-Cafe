@@ -321,3 +321,6 @@ h1 { margin:0; font-size:28px; } h2 { margin:0; font-size:18px; }
 .customer-row strong { color:var(--terracotta); font-size:15px; }
 @media (max-width:900px) { .customer-filters { grid-template-columns:repeat(2,minmax(0,1fr)); } .customer-filters .submit { width:100%; } }
 @media (max-width:600px) { .customer-filters { grid-template-columns:1fr; } }
+
+.history-customer { display:flex; flex-wrap:wrap; gap:8px 14px; margin:10px 0 4px; padding:8px 10px; border-radius:8px; background:#fffaf0; color:var(--coffee); font-size:12px; }
+.history-customer span { color:var(--muted); }
