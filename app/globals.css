@@ -81,7 +81,8 @@ button { font:inherit; cursor:pointer; }
 .delete-order-button:hover { background:#fff0ed; }
 .edit-order { margin-top:12px; padding:10px; border:1px solid #e3cbbb; border-radius:10px; background:#fffaf0; }
 .edit-order-title { color:var(--coffee); font-size:12px; font-weight:800; margin-bottom:5px; }
-.edit-order-line { display:grid; grid-template-columns:1fr 25px 24px 25px auto; align-items:center; gap:5px; padding:8px 0; border-bottom:1px dashed #dfcfc5; font-size:12px; }\n.edit-order-item { min-width:0; display:flex; flex-direction:column; gap:5px; } .edit-order-item > span { overflow-wrap:anywhere; } .edit-order-item label { display:flex; align-items:center; gap:5px; color:var(--muted); font-size:10px; } .edit-price-input { width:78px; min-height:25px; padding:3px 6px; border:1px solid var(--line); border-radius:5px; background:#fff; color:var(--coffee); font-size:11px; }
+.edit-order-line { display:grid; grid-template-columns:1fr 25px 24px 25px auto; align-items:center; gap:5px; padding:8px 0; border-bottom:1px dashed #dfcfc5; font-size:12px; }
+.edit-order-item { min-width:0; display:flex; flex-direction:column; gap:5px; } .edit-order-item > span { overflow-wrap:anywhere; } .edit-order-item label { display:flex; align-items:center; gap:5px; color:var(--muted); font-size:10px; } .edit-price-input { width:78px; min-height:25px; padding:3px 6px; border:1px solid var(--line); border-radius:5px; background:#fff; color:var(--coffee); font-size:11px; }
 .edit-order-line button { border:1px solid var(--line); background:#fff; border-radius:5px; min-height:24px; color:var(--coffee); }
 .edit-order-line .remove-item { padding:4px 6px; font-size:10px; color:#a43e2d; }
 .add-item-picker { margin-top:10px; position:relative; }
