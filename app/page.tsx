@@ -22,7 +22,8 @@ const fallbackMenu: MenuItem[] = [
 const money = (n:number) => `৳${n.toLocaleString("en-BD")}`;
 const locationLabel = (value:number) => value >= 12 ? `Parcel ${value - 11}` : `Table ${value}`;
 const orderLocations = Array.from({length:14},(_,i)=>i+1);
-const formatTime = (value:string) => new Date(value).toLocaleTimeString("en-BD", { hour:"numeric", minute:"2-digit" });\nconst formatDate = (value:string) => new Date(value).toLocaleDateString("en-BD", { day:"numeric", month:"short", year:"numeric" });
+const formatTime = (value:string) => new Date(value).toLocaleTimeString("en-BD", { hour:"numeric", minute:"2-digit" });
+const formatDate = (value:string) => new Date(value).toLocaleDateString("en-BD", { day:"numeric", month:"short", year:"numeric" });
 
 function Login({ onLogin }: { onLogin: (username:string, password:string)=>Promise<void> }) {
   const [email,setEmail]=useState(""); const [password,setPassword]=useState(""); const [busy,setBusy]=useState(false); const [error,setError]=useState("");
